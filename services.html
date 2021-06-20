@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  body{
+                   font-size: 20px;
+                   color: dark;
+                   font-family: 'Flamenco', cursive; 
+                   background-color: #ffffca;
+
+       }            
+            
+      .abt{
+            text-align: center;
+            font-family: 'Charmonman', cursive;
+            color:#9b111e;
+            font-size: 60px;
+              
+}  
+ 
+ 
+
+        .flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #FFFFFF;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 120px;
+}
+
+  .f{
+               font-family: 'Charmonman', cursive;
+               font-size: 60px;
+               color:#9b111e;
+               margin-top: 30px;
+               text-align: center;
+             }
+
+.btn {
+  background-color: #FF6666; /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.r1{
+  margin-top: 50px;
+  
+}
+
+.r2{
+  margin-top: 100px;
+  
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+h1 {
+  color: #c43131;
+  text-align: center;
+}
+p {
+  color: black;
+  text-align: center;
+  font-family: 'Flamenco', cursive;
+}
+
+
+</style>
+</head>
+<body class="bg">
+
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">SMILEYS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link"  href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Our Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/donate">Donate Us</a>
+      </li>
+     
+       <li class="nav-item">
+        <a class="nav-link" href="/connect">Connect with us</a>
+      </li>
+        
+   </ul>   
+   
+  </div>
+</nav>
+
+
+<div class="f"><a>Our Services</a></div>
+
+<section>
+
+  <div class="container">
+    <div class="r1">
+    <div class="grid">
+    
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/static/images/adoption.png" alt="Avatar" style="width:300px;height:400px;">
+       </div>
+    <div class="flip-card-back">
+      <br>
+      <p>(i) Counselling and preparation of the Home Study Report of the prospective adoptive parents</p>
+      <p>(ii) Post adoption counselling to adopted children and adoptive parents</p>
+      <p>(iii) Preparation of the Child Study Report </p>
+    </div>
+  </div>
+</div>
+      
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+   <img src="/static/images/care.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+    <div class="flip-card-back">
+      <br>
+      <p>(i) Provide a safe and secure environment with quality caregivers</p>
+        <p>(ii) Responsible for ensuring children receive adequate opportunities for physical fitness.</p>
+         <p>(iii) Assist in improving a child’s social skills which includes sharing, cooperating and language skills.</p>
+     <p></p> 
+    </div>
+  </div>
+</div> 
+      
+   
+
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/static/images/place.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+    <div class="flip-card-back">
+      <br>
+      <p>(i) Provide placements to give students the opportunity to gain skills specific to their subject or industry of choice</p>
+       <p>(ii) Gives apprentices a real chance to put skills into practice and helps them to gain confidence in a working environment.</>
+        
+    </div>
+  </div>
+</div> 
+      
+ </div>   
+
+
+<div class="r2">
+  <div class="grid">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/static/images/aware.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+    <div class="flip-card-back">
+      <br>
+      <p>(i) Conducting workshops by people who have real experience in the subject under discussion</p>
+      <p>(ii) Workshops provide a way to create an intensive educational experience in a short amount of time</p>
+      <p>(iii) Feedback from both the presenter and peers in the group is taken</p>
+    </div>
+  </div>
+</div> 
+    
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/static/images/help.png" alt="Avatar" style="width:300px;height:400px;">
+    
+      </div>
+    <div class="flip-card-back">
+      <h2> </h2><br>
+      <p>(i) CHILDLINE works for the protection of rights of all children aged from 0 to 18</p>
+      <p>(ii) Special focus is on all children in need of care and protection, especially the more vulnerable sections</p>
+       <p>(iii) It is a 24×7 emergency phone service for children in need of aid and assistance</p> 
+    </div>
+  </div>
+</div> 
+      
+    
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="/static/images/labour.png" alt="Avatar" style="width:300px;height:400px;">
+      </div>
+    <div class="flip-card-back">
+      <br>
+      <p>(i) Our Childline team closely works with the authorities to stop child labour in India</p>
+       <p>(ii) Provide support to children found in child labour</p>
+       <p>(iii) Mobilize public support for respecting children's rights</p>
+    </div>
+  </div>
+</div>
+    </div>  
+   
+     </div> 
+    </div>
+  </div>
+
+
+</div>
+
+</section>
+</section>
+<footer>
+  <br><br><br><br>
+</footer>
+
+</body>
+</html>
+

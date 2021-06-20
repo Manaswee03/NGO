@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lily+Script+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cantata+One&family=Niconne&display=swap" rel="stylesheet">
+
+
+<head>
+<style>
+
+ html {
+	 display: grid;
+	 min-height: 100%;
+}
+ body {
+	 display: grid;
+	 overflow: hidden;
+	
+	 
+	  background-repeat:no-repeat;
+    background-size:100% 100vh;
+ background-image: url(/static/images/thanks.png);
+}
+ #container {
+	 position: relative;
+	 margin: auto;
+	 overflow: hidden;
+	 width: 1000px;
+	 height: 570px;
+}
+ h1 {
+ 	 font-family: 'Charmonman', cursive;
+	 font-size: 40px;
+	 font-weight: bold;
+	 padding-top: 5px;
+	 color: white;
+	 padding-bottom: 5px;
+	 
+}
+ .green {
+	 color: #4ec07d;
+}
+ .red {
+	 color: #e96075;
+}
+
+ p {
+ 	 font-family: 'Charmonman', cursive;
+	 margin-top: 5px;
+	 font-size: 25px;
+	 color: #FFFFFF;
+	
+}
+ button, .dot {
+	 cursor: pointer;
+}
+ #success-box {
+	 position: absolute;
+	 width: 50%;
+	 height: 90%;
+	 left: 25%;
+	 background: linear-gradient(to bottom right,#a8516e 40%, #e18e96 90%);
+	 border-radius: 20px;
+	 box-shadow: 5px 5px 20px rgba(203, 205, 211, 10);
+	 perspective: 40px;
+}
+
+ .dot {
+	 width: 8px;
+	 height: 8px;
+	 background: #fcfcfc;
+	 border-radius: 50%;
+	 position: absolute;
+	 top: 4%;
+	 right: 6%;
+}
+ .dot:hover {
+	 background: #c9c9c9;
+}
+ .two {
+	 right: 12%;
+	 opacity: 0.5;
+}
+ .face {
+	 position: absolute;
+	 width: 22%;
+	 height: 22%;
+	 background: #fcfcfc;
+	 border-radius: 50%;
+	 border: 1px solid #777;
+	 top: 21%;
+	 left: 37.5%;
+	 z-index: 2;
+	 animation: bounce 1s ease-in infinite;
+}
+ .face2 {
+	 position: absolute;
+	 width: 22%;
+	 height: 22%;
+	 background: #fcfcfc;
+	 border-radius: 50%;
+	 border: 1px solid #777;
+	 top: 21%;
+	 left: 37.5%;
+	 z-index: 2;
+	 animation: roll 3s ease-in-out infinite;
+}
+ .eye {
+	 position: absolute;
+	 width: 5px;
+	 height: 5px;
+	 background: #777;
+	 border-radius: 50%;
+	 top: 40%;
+	 left: 20%;
+}
+ .right {
+	 left: 68%;
+}
+ .mouth {
+	 position: absolute;
+	 top: 43%;
+	 left: 41%;
+	 width: 7px;
+	 height: 7px;
+	 border-radius: 50%;
+}
+ .happy {
+	 border: 2px solid;
+	 border-color: transparent #777 #777 transparent;
+	 transform: rotate(45deg);
+}
+ .sad {
+	 top: 49%;
+	 border: 2px solid;
+	 border-color: #777 transparent transparent #777;
+	 transform: rotate(45deg);
+}
+ .shadow {
+	 position: absolute;
+	 width: 21%;
+	 height: 3%;
+	 opacity: 0.5;
+	 background: #FFFFFF;
+	 left: 40%;
+	 top: 43%;
+	 border-radius: 50%;
+	 z-index: 1;
+}
+ .scale {
+	 animation: scale 1s ease-in infinite;
+}
+ .move {
+	 animation: move 3s ease-in-out infinite;
+}
+ .message {
+	 position: absolute;
+	 width: 100%;
+	 text-align: center;
+	 height: 40%;
+	 top: 47%;
+}
+
+.f{
+      font-family: 'Charmonman', cursive;
+      font-size: 30px;
+      font-weight: bold;
+      color:white;
+   }  
+
+ 
+      .btn {
+
+  font-family: 'Cantata One', serif;
+      	margin-top: 20px;
+  background-color: #b76e79;/* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ .button-box:hover {
+	 background: #efefef;
+	 transform: scale(1.05);
+	 transition: all 0.3s ease-in-out;
+}
+ @keyframes bounce {
+	 50% {
+		 transform: translateY(-10px);
+	}
+}
+ @keyframes scale {
+	 50% {
+		 transform: scale(0.9);
+	}
+}
+ @keyframes roll {
+	 0% {
+		 transform: rotate(0deg);
+		 left: 25%;
+	}
+	 50% {
+		 left: 60%;
+		 transform: rotate(168deg);
+	}
+	 100% {
+		 transform: rotate(0deg);
+		 left: 25%;
+	}
+}
+ @keyframes move {
+	 0% {
+		 left: 25%;
+	}
+	 50% {
+		 left: 60%;
+	}
+	 100% {
+		 left: 25%;
+	}
+}
+ 
+ footer p {
+	 color: #ef8d9c;
+	 letter-spacing: 2px;
+}
+ footer a {
+	 color: #b0db7d;
+	 text-decoration: none;
+}
+ footer a:hover {
+	 color: #ffc39e;
+}
+ 
+ </style>
+</head>
+<body>
+<div id="container">
+  <div id="success-box">
+    
+    <div class="face">
+      <div class="eye"></div>
+      <div class="eye right"></div>
+      <div class="mouth happy"></div>
+    </div>
+    <div class="shadow scale"></div>
+    <div class="message">
+    	<h1>Success!</h1>
+    	<p>ThankYou...You truly make the difference for us, and we are extremely grateful!</p>
+    
+    <button class="btn" id="myButton711">Continue</button>
+</div>
+  </div>
+ 
+
+
+
+   <script type="text/javascript">
+        document.getElementById("myButton711").onclick = function () {
+        location.href = "/";
+      };
+     </script>
+</body>
+</html>

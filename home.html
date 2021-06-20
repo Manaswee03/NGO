@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Lily+Script+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Domine&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+
+<script language="JavaScript" type="text/javascript" src="scripts/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="scripts/bootstrap.min.js"></script>
+  <!-- Carousel -->
+<script language="JavaScript" type="text/javascript">
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 3000
+    })
+  });    
+</script>  
+
+
+
+<style>
+
+
+footer {
+  /* place on the bottom */
+ 
+position:relative;
+z-index:0;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 250px;
+background: #888888;
+display: grid;
+ 
+  padding: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+.card{
+   
+
+  cursor: pointer;
+   width: 300px;
+  height: 400px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display: inline-block;
+  position: relative;
+}
+
+
+.card:hover{
+     transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card h3{
+  font-weight: 600;
+}
+
+.abt{
+  text-align: center;
+   font-family: 'Charmonman', cursive;
+               color:#9b111e;
+              font-size: 60px;
+              
+}
+
+ 
+ 
+.grid {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 60px;
+}
+
+
+  #lab_social_icon_footer {
+  padding: 40px 0;
+
+}
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+      body{
+      font-size: 20px;
+      color: dark;
+      font-family: 'Flamenco', cursive;   
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      
+
+        }
+        .caro{
+           font-family: 'Charmonman', cursive;
+               font-color:#FF7F50;
+              font-size: 60px;
+               color:#FF7F50;
+          margin-top: 100px;
+        }
+
+                     .swee{
+              font-family:   Comic Sans MS, Comic Sans, cursive;
+              color: #FFFAF0;
+              text-align-last: top-left;
+              font-size:      3em;
+
+             }
+             .b{
+              font-family:   Comic Sans MS, Comic Sans, cursive;
+              color: #FFFAF0;
+              text-align-last:center;
+              font-size:      3em;
+             }
+             .c{
+              font-family:   Comic Sans MS, Comic Sans, cursive;
+              color: dark;
+              text-align-last:center;
+              font-size:      3em;
+
+             }
+
+             .v{
+              margin-left: 40px;
+             }
+
+             .num{
+              margin-left: 50px; 
+             }
+
+
+             .f{
+               font-family: 'Charmonman', cursive;
+               font-color:#FF7F50;
+              font-size: 60px;
+               color:#FF7F50;
+             }
+
+               .g{
+               font-family: 'Charmonman', cursive;
+               margin-left: 450px;
+               font-size: 60px;
+               color:#FF7F50;
+
+             }
+
+             .leaf{
+              margin-left: 180px;
+             }
+
+             .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 50px;
+}
+  
+.f1{
+  margin-left: 50px;
+   font-family: 'Charmonman', cursive;
+               font-color:#FF7F50;
+              font-size: 60px;
+               color:#FF7F50;
+}
+
+
+.tb{
+  margin-left: 15px;
+}
+
+.decor{
+  margin-left: 25px;
+}
+
+
+</style>  
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">SMILEYS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/service">Our Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/donate">Donate Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="/connect">Contact Us</a>
+      </li>
+        
+   </ul>   
+   
+  </div>
+</nav>
+
+
+<header>
+  
+    
+      <img class="d-block w-100" src="/static/images/c6.png" alt="First slide">  
+    
+
+</header>
+
+<br>
+<section class="my-5">
+   <div class="abt"> <p>About Us</p></div><br>
+  <div class="decor">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12">
+    <img src="/static/images/ngo.jpg" class="img-fluid aboutimg" width="550" height="500">
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+    <br>
+    
+     <div class="f"> <p>Smileys</p></div>
+     <br>
+      <p class="py-1" style="font-family:'font-family: 'Sofia';font-size: 20px'">This is a non-governmental organization for welfare in the education field. It plays an important role in supporting the most vulnerable children to access their right to education through innovative ideas such as forming student groups and child-tracking systems, holding awareness workshops with parents to ensure that they send children to school. We also provide placement & apprenticeship opportunities to ITI, BTech, and diploma students for their bright future.</p>      
+    </div>
+    </div>  
+  </div>
+</section>  
+
+<section class="my-5">
+ 
+  <div class="decor">
+  <div class="row">
+   
+    <div class="col-lg-6 col-md-6 col-12">
+      
+     <div class="f1"> <p>Our Mission</p></div>
+     <br>
+      <p class="py-1" style="font-family:'font-family: 'Sofia';font-size: 20px'">Our mission is to ensure access to quality, inclusive, child-centred social & financial education for all children and young people, especially the most vulnerable."To improve the quality of rural education in schools and after schools hours by providing access to better educational infrastructure includes digital tools, library, games, financial support and creating progressive and positive learning environment by working with the village community, teachers, government and other stakeholders".
+
+      </p>
+      
+    </div>
+
+   
+    <div class="col-lg-6 col-md-6 col-12">
+      <p class="lr"> <img src="/static/images/mission.png" class="img-fluid aboutimg" width="500" height="300"></img></p>
+    </div>
+  </div>
+</div>  
+</div>  
+</section>
+
+
+   <div>
+
+<section class="my-5">
+ 
+  <div class="decor">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12">
+      <p class="rl"><img src="/static/images/team.jpg" class="img-fluid aboutimg" width="600" height="600"></p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+     <div class="f">  <p>Our Team</p></div>
+      <p clas="lr">
+      <p class="py-1" class="rl" style="font-family:'font-family: 'Sofia';font-size: 20px'">Through a strong network of 345 partners and 38 governments, the organisation reaches 10.5 million children and young people each year in 108 countries. 
+        In addition, teachers are provided with training and we conduct research to evaluate the quality and effectiveness of our programmes.
+      </p>
+    </p>
+ 
+    </div>
+  </div>
+</section>
+
+
+
+   <div>
+
+<section class="my-5">
+ 
+  <div class="decor">
+  <div class="row">
+   
+    <div class="col-lg-6 col-md-6 col-12">
+     <div class="f1"> <p>Our Scope</p></div>
+      <p class="py-1" style="font-family:'font-family: 'Sofia';font-size: 20px'">
+       Smileys, run programs in the remotest corners of India and urban areas to provide quality education and healthcare, protection from harm and abuse, and life-saving aid during emergencies to children. Globally, Smileys is present in more than 80 countries and works to improve the lives of the most vulnerable children living there.
+
+      </p>
+      <p class="num"><img src="/static/images/numbers.PNG" class="img-fluid aboutimg" width="600" height="300"></p>
+    </div>
+
+   
+    <div class="col-lg-6 col-md-6 col-12">
+      <p class="lr">  <img src="/static/images/scope1.png" class="img-fluid aboutimg" width="600" height="600"></img></p>
+      <br>
+    
+    </div>
+  </div>
+</div>  
+</div>  
+</section>
+
+
+<section class="my-5">
+ 
+  <div class="decor">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12">
+    <p class="rl">   <img src="/static/images/what.jpg" class="img-fluid aboutimg" width="600" height="600"></p>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+     
+     <div class="f"><p>What We Do</p></div>
+         <p class="py-1" style="font-family:'font-family: 'Sofia';font-size: 20px ;'">
+     
+<p>We aim to increase our influence and intensify support to the network in order to accelerate scale-up of quality programmes for children and young people.</p>
+<p>We create high-quality curricula, for different age groups, which can be contextualised to local needs or specific circumstances.</p>
+<p>Our work aims to break the vicious cycle of poverty and social isolation and to restore hope for a better future.</p> 
+<p>We assist in the process of social integration and personal realisation of underprivileged children, young people, adults and families;</p>
+      </p>
+   
+    </div>
+  </div>
+</section>
+
+
+<section class="my-5">
+  <div class="py-5">
+   <div class="g"> <p>Showcase of our Projects...</p></div>
+  </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card card-1">
+        <h3>Education</h3>
+        
+        <img src="/static/images/education.jpg"width="300" height="400">
+     </div>
+    </div>
+    <div class="col-md-4">
+     <div class="card card-2">
+        <h3>Fun Events</h3>
+        <img src="/static/images/fun.jpg" width="300" height="400">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card card-3">
+        <h3>Workshops</h3>
+        <img src="/static/images/workshop.jpg" width="300" height="400">
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<br><br>
+
+
+<footer>
+  
+      
+           <p><span data-feather="mail"></span>
+            <u>Email</u> : smileys7@gmail.com<br></p>
+           
+           <p><span data-feather="phone"></span>
+           <u>Contact</u> : 8779622578<br></p>
+
+<section id="lab_social_icon_footer">
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <div class="text-center center-block">
+                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+              <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+              <a href="mailto:planningale7@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social "></i></a>
+    
+
+</div>
+</section>
+  
+
+
+</footer>
+
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script>
+      feather.replace()
+    </script>  
+
+</body>
+</html>

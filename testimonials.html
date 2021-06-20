@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+
+<style>
+  .bg-nav{
+     margin-left: 0px;
+    background-color: #FA8072; }
+  body {
+  
+                   font-size: 20px;
+                   font-family: 'Flamenco', cursive;
+}
+
+.icons svg{fill: currentColor;}
+.icons path{fill: currentColor;} 
+.icons{fill: currentColor;}
+
+/* ---------------------------------- */
+/* ----------- SECTION 6 ------------ */
+/* ---------------------------------- */
+
+#section6 .container {
+  max-width: 100%;
+  padding: 0 !important;
+}
+#section6 .grid {
+   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+#section6 .col {
+  padding: 0;
+  position: relative;
+  background: #1f1f1f;
+}
+#section6 .col:hover {
+  background: #F88379;
+}
+#section6 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.15;
+  filter: alpha(opacity=15);
+}
+#section6 .col:hover img {
+  opacity: 0.04;
+  filter: alpha(opacity=4);
+}
+#section6 .testText {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 20%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  color: #fff;
+  
+  -webkit-transition: all 0.5s ease;
+transition: all 0.5s ease;
+  
+     display: -webkit-flex;
+   display: -ms-flexbox;
+   display: -webkit-box;
+   display: flex;
+   
+   -webkit-flex-direction: row;
+   -ms-flex-direction: row;
+           -webkit-box-orient: horizontal;
+           -webkit-box-direction: normal;
+           flex-direction: row;
+           
+   -webkit-align-items: center;
+   -ms-flex-align: center;
+           -webkit-box-align: center;
+           align-items: center;
+           
+   -webkit-justify-content: center;
+   -ms-flex-pack: center;
+           -webkit-box-pack: center;
+           justify-content: center;
+}
+#section6 .testText .inner {
+  position: relative;
+  line-height: 1.4em;
+}
+#section6 .testText .inner:before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  font-size: 0.8em;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  color: #1b1b1b;
+}
+
+#section6 .col:hover .testText {
+  top: 5%;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#section6 .testName {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+}
+#section6 h4 {
+  font-size: 1em;
+  line-height: 2em;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+}
+#section6 h4 strong {
+  color: #FA8072;
+}
+#section6 .col:hover h4 strong {
+  color: #1b1b1b;
+}
+
+/* ----------- SECTION 6 ICONS ------------ */
+
+.testName .testIcon {
+  width: 25px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+}
+
+#section6 svg {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+  fill: #cfa03a;
+}
+
+#section6 svg.plus {
+  fill: #000;
+}
+
+#section6 svg.plus {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+#section6 .col:hover svg.plus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+#section6 svg:first-child {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#section6 .col:hover svg:first-child {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/*-----------------------------------*/
+/*-------------- GRID ---------------*/
+/*-----------------------------------*/
+.grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 0px;
+  margin-left: 0px;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.grid .col {
+  padding: 10px;
+}
+
+.grid.small-gutter .col {
+  padding: 5px;
+}
+
+.col-1 .col {
+  width: 100%;
+}
+
+.col-2 .col {
+  width: 50%;
+}
+
+.col-3 .col {
+  width: 33.333%;
+}
+
+.col-4 .col {
+  width: 25%;
+}
+
+.col-5 .col {
+  width: 20%;
+}
+
+.col-6 .col {
+  width: 19%;
+}
+
+.grid .col-1 {
+  width: 6.25%;
+}
+.grid .col-2 {
+  width: 12.5%;
+}
+.grid .col-3 {
+  width: 18.75%;
+}
+.grid .col-4 {
+  width: 25%;
+}
+.grid .col-5 {
+  width: 31.25%;
+}
+.grid .col-6 {
+  width: 37.5%;
+}
+.grid .col-7 {
+  width: 43.75%;
+}
+.grid .col-8 {
+  width: 50%;
+}
+.grid .col-9 {
+  width: 56.25%;
+}
+.grid .col-10 {
+  width: 62.5%;
+}
+.grid .col-11 {
+  width: 68.75%;
+}
+.grid .col-12 {
+  width: 75%;
+}
+.grid .col-13 {
+  width: 81.25%;
+}
+.grid .col-14 {
+  width: 87.5%;
+}
+.grid .col-15 {
+  width: 93.75%;
+}
+.grid .col-16 {
+  width: 100%;
+}
+
+@media all and (max-width: 1400px) {
+.col-5 .col {
+  width: 400%;
+}
+  .col-5 .col:last-child {
+    display: none;
+  }
+}
+
+@media all and (max-width: 9000px) {
+.col-5 .col {
+  width: 50%;
+}
+}
+
+@media all and (max-width: 6000px) {
+.col-5 .col {
+  width: 100%;
+}
+}
+</style>
+</head>
+
+<body class="bg-nav">
+
+<?php include 'menu.php'; ?>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">PLANNINGALE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+     <a class="nav-link" href="/service">Our Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutus">About Us</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link active" aria-current="page"href="about.php">Testimonials</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link "  href="/contact">Connect with us</a>
+      </li> 
+        
+   </ul>   
+   
+  </div>
+</nav>
+<body>
+  <div id="section6">
+<div class="grid col-5">
+  <div class="col test"><img src="/static/images/shriya.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">A lot of gratitude in order to organize my big day. Your amazing work was genuinely valued</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Shriya's <strong>Graduation Party</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/ef-B.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">It went really well! Everyone was pleased. Your guys did an amazing job</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Efron's <strong>Christening</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/natz.jpeg" alt="testimonial image" style="width:500px;height:500px;"/>
+<div class="testText">
+<div class="inner">The whole event was well organised... I want to thank you from the bottom of my heart for planning my birthday party so meticulously well. I am very much looking forward to working with Planningale again. I will be personally recommending your services to all my friends</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Natz's <strong>18th Birthday</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/manaswee.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">I want to thank you so much for all of your help coordinating this Diwali event! Everything went amazingly well that day and I cannot express how appreciative I am for everything that you guys did for me! I will be sure to recommend you to others in the future!</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Manaswee's <strong>Diwali celebration</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/w1.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">Ryan & I would like to thank Planningale who made our wedding the most magical day of our lives. I don’t think we could have pulled this off without you! Thank you for pushing through and making this dream, reality.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Michelle and Ryan's <strong>Wedding</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/vv.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">Thanks to everyone for all their hard work. Planningale is fantastic to use!!! Thanks</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Vaivaswat's <strong>Bachelor Party</strong></h4>
+</div>
+</div>
+
+<div class="col test"><img src="/static/images/vasu.jpeg" alt="testimonial image" style="width:500px;height:500px;"/>
+<div class="testText">
+<div class="inner">Great. no complaints.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Vasudha's <strong>Bachelorette Party</strong></h4>
+</div>
+</div>
+
+<div class="col test"><img src="/static/images/andrea.jpeg" alt="testimonial image" style="width:500px;height:500px;"/>
+<div class="testText">
+<div class="inner">I have recommended you several people.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Andrea's <strong>Engagement</strong></h4>
+</div>
+</div>
+
+<div class="col test"><img src="/static/images/ulka2.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">Planningale has made our dream come true in more ways than one. Their planning was meticulous and the wedding was thoroughly enjoyed by all guests. The overall management was very well managed and was in complete sync with the entire celebration. Thank you for being a part of our family on our special day. It was an absolute pleasure working with Planningale</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Ulka and Darshan's <strong>Wedding</strong></h4>
+</div>
+</div>
+
+<div class="col test"><img src="/static/images/ef-b2.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">WOW!!!! This is my second time working with Planningale. A big thank you to you and your entire staff on your fantastic work.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Efron's <strong>First Birthday</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/jignesh.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">Perfect organization, honest and authentic speakers of incredible high level. Meeting and exchange of ideas with 100 CEO´s was exciting!</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Jignesh's <strong>Book Launch Party</strong></h4>
+</div>
+</div>
+<div class="col test"><img src="/static/images/anj.jpeg" alt="testimonial image"style="width:500px;height:500px;" />
+<div class="testText">
+<div class="inner">Thanks Planningale for organizing such a beautiful event. It sure did put a smile on my mom's face.</div>
+</div>
+<div class="testName">
+<div class="testIcon"><svg class="icons"><use xlink:href="#quote"></use>&nbsp;</svg> <svg class="icons plus"><use xlink:href="#quoteplus"></use>&nbsp;</svg></div>
+<h4>Anjeline's <strong>75th Birthday</strong></h4>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
